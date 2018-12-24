@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ImageView android:layout_width="100dp"
+               android:layout_margin="10dp"
+               android:background="#a000"
+               android:padding="1dp"
+               android:src="@drawable/saeri"
+               android:scaleType="fitXY"
+               android:id="@+id/iv_news_listview_img"
+               android:layout_height="100dp"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:weightSum="4"
+                  android:layout_marginRight="10dp"
+                  android:orientation="vertical"
+                  android:layout_marginTop="10dp"
+                  android:layout_toRightOf="@id/iv_news_listview_img"
+                  android:layout_height="100dp">
+        <TextView android:layout_width="match_parent"
+                  android:text="content"
+                  android:textSize="30sp"
+                  android:id="@+id/tv_news_listview_items_title"
+                  android:textColor="#000000"
+                  android:maxLines="2"
+                  android:layout_weight="3"
+                  android:layout_height="0dp"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="date"
+                  android:textSize="15sp"
+                  android:textColor="#000000"
+                  android:id="@+id/tv_news_listview_items_date"
+                  android:layout_weight="1"
+                  android:layout_height="0dp"/>
+    </LinearLayout>
+</RelativeLayout>

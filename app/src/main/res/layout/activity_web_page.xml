@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="#ff0000"
+                    android:layout_height="60dp">
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:layout_centerVertical="true"
+                     android:id="@+id/ibtn_web_page_back"
+                     android:background="@drawable/back_arrow_selector"
+                     android:layout_height="wrap_content"/>
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_marginRight="5dp"
+                     android:layout_centerVertical="true"
+                     android:layout_alignParentRight="true"
+                     android:id="@+id/ibtn_web_page_share"
+                     android:background="@drawable/share_page_selector"
+                     android:layout_height="wrap_content"/>
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_marginRight="5dp"
+                     android:id="@+id/ibtn_web_page_font"
+                     android:layout_centerVertical="true"
+                     android:layout_toLeftOf="@id/ibtn_web_page_share"
+                     android:background="@drawable/font_selector"
+                     android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <ProgressBar android:layout_width="match_parent"
+                 android:progressDrawable="@drawable/web_progress_bar_bg"
+                 style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                 android:id="@+id/pb_web_page_progress"
+                 android:layout_height="wrap_content"/>
+    <WebView android:layout_width="match_parent"
+             android:id="@+id/wv_web_page_content"
+             android:layout_height="match_parent">
+    </WebView>
+
+</LinearLayout>

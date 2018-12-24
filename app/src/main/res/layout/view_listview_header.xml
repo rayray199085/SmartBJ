@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="320dp">
+        <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:id="@+id/vp_news_beijing_fragment_pager"
+                android:layout_height="315dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp" android:layout_marginRight="5dp" android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp">
+        </android.support.v4.view.ViewPager>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#99a4a4a4"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/tv_news_beijing_fragment_title"
+                      android:text="蜗居生活"
+                      android:textColor="#fffefe"
+                      android:gravity="center"
+                      android:textSize="25sp"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content"
+                           android:id="@+id/iv_news_beigjing_img1"
+                           android:background="@drawable/off"
+                           android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="wrap_content"
+                           android:background="@drawable/off"
+                           android:id="@+id/iv_news_beigjing_img2"
+                           android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="wrap_content"
+                           android:background="@drawable/off"
+                           android:id="@+id/iv_news_beigjing_img3"
+                           android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="wrap_content"
+                           android:background="@drawable/off"
+                           android:id="@+id/iv_news_beigjing_img4"
+                           android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

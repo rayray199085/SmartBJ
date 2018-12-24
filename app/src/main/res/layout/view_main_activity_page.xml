@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="#fc0000"
+                    android:layout_height="60dp">
+        <ImageView
+                android:layout_margin="10dp"
+                android:id="@+id/iv_main_drawer_open_drawer"
+                android:background="@drawable/open_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:textSize="35sp"
+                  android:text="Title"
+                  android:id="@+id/tv_main_title"
+                  android:textColor="#ffffff"
+                  android:layout_height="wrap_content"/>
+        <ImageView
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible"
+                android:id="@+id/iv_main_drawer_switch_images_style"
+                android:background="@drawable/switch_style_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+        <com.project.stephencao.smartbj.view.MyViewPager
+                android:layout_width="match_parent"
+                android:id="@+id/vp_main_activity_content"
+                android:layout_height="match_parent">
+        </com.project.stephencao.smartbj.view.MyViewPager>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:visibility="invisible"
+                      android:id="@+id/ll_sliding_menu_content_fragment"
+                      android:layout_height="match_parent">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_main_bottom_bar"/>
+</LinearLayout>

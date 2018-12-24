@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+            android:id="@+id/dl_main_activity_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!--MainActivity-->
+        <include layout="@layout/view_main_activity_page"/>
+        <!--Sliding menu-->
+        <include layout="@layout/view_sliding_menu"/>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>
